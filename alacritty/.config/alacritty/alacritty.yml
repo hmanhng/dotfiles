@@ -21,9 +21,9 @@ window:
   #
   # Specified in number of pixels.
   # If the position is not set, the window manager will handle the placement.
-  position:
-    x: 100
-    y: 70
+  # position:
+  #   x: 100
+  #   y: 70
 
   # Window padding (changes require restart)
   #
@@ -95,33 +95,33 @@ window:
 font:
   # Normal (roman) font face
   normal:
-    family: Iosevka Term
+    family: Iosevka Term Medium Oblique
     style: Regular
 
   # Bold font face
   bold:
-    family: Iosevka Term
+    family: Iosevka Term Bold Oblique
     style: Bold
 
   # Italic font face
   italic:
-    family: Iosevka Term
+    family: Iosevka Term Medium Italic
     style: Italic
 
   # Bold italic font face
   bold_italic:
-    family: Iosevka Term
+    family: Iosevka Term Bold Italic
     style: Bold Italic
 
   # Point size
-  size: 13.0
+  size: 14.0
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
   offset:
     x: 0
-    y: 2
+    y: 1
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the
