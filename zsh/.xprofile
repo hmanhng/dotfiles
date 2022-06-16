@@ -28,4 +28,4 @@ redshift &
 blueman-applet &
 caffeine &
 xfce4-power-manager &
-cfw &
+sleep 2 && cfw &
