@@ -13,3 +13,19 @@ export BROWSER="google-chrome-stable"
 
 # For QT Themes
 export QT_QPA_PLATFORMTHEME=qt5ct
+
+lxpolkit &
+nm-applet &
+udiskie -s &
+xcape -e 'Super_L=Alt_L|F1' &
+trayer --edge top --align right --widthtype request --padding 0 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 24 &
+nowater -T &
+xfce4-clipman &
+picom &
+redshift &
+"/opt/xdman/jre/bin/java" -Xmx1024m -jar "/opt/xdman/xdman.jar" -m &
+/usr/lib/xfce4/notifyd/xfce4-notifyd &
+blueman-applet &
+caffeine &
+xfce4-power-manager &
+cfw &
