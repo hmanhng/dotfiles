@@ -95,8 +95,8 @@ window:
 font:
   # Normal (roman) font face
   normal:
-    family: Iosevka Term Medium Oblique
-    style: Regular
+    family: Iosevka Term
+    style: Oblique
 
   # Bold font face
   bold:
