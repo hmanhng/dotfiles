@@ -14,6 +14,7 @@ export BROWSER="google-chrome-stable"
 # For QT Themes
 export QT_QPA_PLATFORMTHEME=qt5ct
 
+xsetroot -cursor_name left_ptr &
 lxpolkit &
 nm-applet &
 udiskie -s &
