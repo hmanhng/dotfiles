@@ -8,10 +8,10 @@ alias zshrc='lvim ~/.config/zsh/'
 # alias lvim='nvim -u ~/.local/share/lunarvim/lvim/init.lua --cmd "set runtimepath+=~/.local/share/lunarvim/lvim"'
 
 # get fastest mirrors
-alias mirror="doas reflector -c China,Singapore -l 10 -p http,https --sort rate --verbose --save /etc/pacman.d/mirrorlist && doas pacman -Syy"
-alias mirrord="doas reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
-alias mirrors="doas reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
-alias mirrora="doas reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
+alias mirror="sudo reflector -c China,Singapore -l 10 -p http,https --sort rate --verbose --save /etc/pacman.d/mirrorlist && sudo pacman -Syy"
+alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
+alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
+alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
 
 # Remarkable
 alias remarkable_ssh='ssh root@10.11.99.1'
@@ -44,7 +44,7 @@ alias gpg-check="gpg2 --keyserver-options auto-key-retrieve --verify"
 alias gpg-retrieve="gpg2 --keyserver-options auto-key-retrieve --receive-keys"
 
 # For when keys break
-alias archlinx-fix-keys="doas pacman-key --init && doas pacman-key --populate archlinux && doas pacman-key --refresh-keys"
+alias archlinx-fix-keys="sudo pacman-key --init && sudo pacman-key --populate archlinux && sudo pacman-key --refresh-keys"
 
 # systemd
 alias mach_list_systemctl="systemctl list-unit-files --state=enabled"
@@ -60,10 +60,10 @@ alias vi="lvim"
 alias vim="lvim"
 
 # root privileges
-alias suvi="doas lvim"
-alias sucp="doas cp"
-alias sumv="doas mv"
-alias surm="doas rm"
+alias suvi="sudo lvim"
+alias sucp="sudo cp"
+alias sumv="sudo mv"
+alias surm="sudo rm"
 
 # Changing "ls" to "exa"
 alias l='exa -F --icons --color=always --group-directories-first'
@@ -74,13 +74,13 @@ alias lt='exa -FaT -L 3 --icons --color=always --group-directories-first' # tree
 alias l.='exa -Fa --icons | egrep "^\."'
 
 # pacman and yay
-alias pac='doas pacman'
-alias pacsyu='doas pacman -Syu'                  # update only standard pkgs
-alias pacsyyu='doas pacman -Syyu'                # Refresh pkglist & update standard pkgs
+alias pac='sudo pacman'
+alias pacsyu='sudo pacman -Syu'                  # update only standard pkgs
+alias pacsyyu='sudo pacman -Syyu'                # Refresh pkglist & update standard pkgs
 alias yaysua='yay -Sua --noconfirm'              # update only AUR pkgs (yay)
 alias yaysyu='yay -Syu --noconfirm'              # update standard pkgs and AUR pkgs (yay)
-alias unlock='doas rm /var/lib/pacman/db.lck'    # remove pacman lock
-alias cleanup='doas pacman -Rns (pacman -Qtdq)'  # remove orphaned packages
+alias unlock='sudo rm /var/lib/pacman/db.lck'    # remove pacman lock
+alias cleanup='sudo pacman -Rns (pacman -Qtdq)'  # remove orphaned packages
 
 # git
 alias addup='git add -u'
@@ -96,5 +96,5 @@ alias stat='git status'  # 'status' is protected name so using 'stat' instead
 alias tag='git tag'
 alias newtag='git tag -a'
 
-alias bat1='echo 1 | doas tee -a /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode'
-alias bat0='echo 0 | doas tee -a /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode'
+alias bat1='echo 1 | sudo tee -a /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode'
+alias bat0='echo 0 | sudo tee -a /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode'
