@@ -25,7 +25,8 @@ xfce4-clipman &
 picom &
 redshift &
 "/opt/xdman/jre/bin/java" -Xmx1024m -jar "/opt/xdman/xdman.jar" -m &
-/usr/lib/xfce4/notifyd/xfce4-notifyd &
+# /usr/lib/xfce4/notifyd/xfce4-notifyd &
+dunst &
 blueman-applet &
 caffeine &
 xfce4-power-manager &
