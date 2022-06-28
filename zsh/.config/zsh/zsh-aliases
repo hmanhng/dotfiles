@@ -96,5 +96,9 @@ alias stat='git status'  # 'status' is protected name so using 'stat' instead
 alias tag='git tag'
 alias newtag='git tag -a'
 
+# wget
+alias wget=wget --hsts-file="$XDG_DATA_HOME/wget-hsts"
+
+# bat
 alias bat1='echo 1 | sudo tee -a /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode'
 alias bat0='echo 0 | sudo tee -a /sys/bus/platform/drivers/ideapad_acpi/VPC2004:00/conservation_mode'

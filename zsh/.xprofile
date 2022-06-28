@@ -4,7 +4,17 @@
 export XDG_CONFIG_HOME=$HOME/.config
 export XDG_CACHE_HOME=$HOME/.cache
 export XDG_DATA_HOME=$HOME/.local/share
+export XDG_STATE_HOME=$HOME/.local/state
 export ZDOTDIR=$HOME/.config/zsh
+export XMONAD_CACHE_DIR=$XDG_CACHE_HOME/xmonad
+export XMONAD_CONFIG_DIR=$XDG_CONFIG_HOME/xmonad
+export XMONAD_DATA_DIR=$XDG_DATA_HOME/xmonad
+
+export GTK2_RC_FILES=$XDG_CONFIG_HOME/gtk-2.0/gtkrc
+export GNUPGHOME=$XDG_DATA_HOME/gnupg
+export CARGO_HOME=$XDG_DATA_HOME/cargo
+export _JAVA_OPTIONS=-Djava.util.prefs.userRoot=$XDG_CONFIG_HOME/java
+export HISTFILE=$XDG_STATE_HOME/bash/history
 
 # Environment variables set everywhere
 export EDITOR="lvim"
@@ -19,7 +29,7 @@ lxpolkit &
 nm-applet &
 udiskie -s &
 xcape -e 'Super_L=Alt_L|F1' &
-trayer --edge top --align right --widthtype request --padding 0 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 24 &
+trayer --edge top --align right --widthtype request --padding 0 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 24 --iconspacing 0 &
 nowater -T &
 xfce4-clipman &
 picom &
