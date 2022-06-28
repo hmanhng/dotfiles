@@ -8,7 +8,7 @@ alias zshrc='lvim ~/.config/zsh/'
 # alias lvim='nvim -u ~/.local/share/lunarvim/lvim/init.lua --cmd "set runtimepath+=~/.local/share/lunarvim/lvim"'
 
 # get fastest mirrors
-alias mirror="sudo reflector -c China,Singapore -l 10 -p http,https --sort rate --verbose --save /etc/pacman.d/mirrorlist && sudo pacman -Syy"
+alias mirror="sudo reflector -c HK,SG -l 5 -p http,https --sort rate --verbose --save /etc/pacman.d/mirrorlist && sudo pacman -Syy"
 alias mirrord="sudo reflector --latest 50 --number 20 --sort delay --save /etc/pacman.d/mirrorlist"
 alias mirrors="sudo reflector --latest 50 --number 20 --sort score --save /etc/pacman.d/mirrorlist"
 alias mirrora="sudo reflector --latest 50 --number 20 --sort age --save /etc/pacman.d/mirrorlist"
