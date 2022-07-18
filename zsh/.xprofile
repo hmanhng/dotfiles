@@ -19,18 +19,17 @@ export BROWSER="microsoft-edge-stabl"
 export QT_QPA_PLATFORMTHEME=qt5ct
 
 xsetroot -cursor_name left_ptr &
+picom &
 lxpolkit &
 nm-applet &
+blueman-applet &
+xfce4-clipman &
+caffeine &
+redshift &
 udiskie -s &
+dunst &
+xfce4-power-manager &
 xcape -e 'Super_L=Alt_L|F1' &
+"/opt/xdman/jre/bin/java" -Xmx1024m -jar "/opt/xdman/xdman.jar" -m &
 trayer --edge top --align right --widthtype request --padding 0 --SetDockType true --SetPartialStrut true --expand true --monitor 1 --transparent true --alpha 0 --tint 0x282c34  --height 24 --iconspacing 0 &
 nowater -T &
-xfce4-clipman &
-picom &
-redshift &
-"/opt/xdman/jre/bin/java" -Xmx1024m -jar "/opt/xdman/xdman.jar" -m &
-dunst &
-blueman-applet &
-caffeine &
-xfce4-power-manager &
-sleep 2 && cfw &
